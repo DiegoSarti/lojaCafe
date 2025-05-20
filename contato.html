@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto - Menu</title>
+    <title>Projeto - Contato</title>
 </head>
 <body>
-    <header class="fixed">
+
+     <header class="fixed">
         <div class="header-area ptb-30 header-sticky">
             <div class="container">
                 <div class="row">
@@ -74,100 +75,66 @@
         </div>
     </section>
 
-    <section class="menu-area ptb-100 menu-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="section-title text-center">
-                        <h1>Produtos</h1>
-                        <span>
-                            <img src="" alt="">
-                        </span>
-                        <p>veja os nossos Produtos</p>
-                    </div>
-                </div>
+    <section class="contact-info-map-area">
+        <!-- Area do Mapa do google -->
+        <div class="google-map-area">
+            <div id="contacts" class="map-area">
+                <div id="googleMap"></div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 01</a></h4>
-                        <span>Descrição do produto 01</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 02</a></h4>
-                        <span>Descrição do produto 02</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 03</a></h4>
-                        <span>Descrição do produto 03</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 04</a></h4>
-                        <span>Descrição do produto 04</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 05</a></h4>
-                        <span>Descrição do produto 05</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="single-menu text-center">
-                        <div class="menu-image">
-                            <span>R$:0,00</span>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <h4><a href="">Cafe 06</a></h4>
-                        <span>Descrição do produto 06</span>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center menu-btn col-sm-12 col-xs-12">
-                    <a href="" class="default-btn"><span>Visualizar todos</span></a>
+        </div>
+        <!-- Fim area mapa do google -->
+        <div class="contact-information-container">
+            <div class="single-information">
+                <span class="info-icon"><i class="zmdi zmdi-phone"></i></span>
+                <span class="info-text">+00 00 0000-0000<br> +00 00 0000-0000</span>
+            </div>
+            <div class="single-information">
+                <span class="info-icon"><i class="zmdi zmdi-globe"></i></span>
+                <span class="info-text">loja@gmail.com <br> www.loja.com.br</span>
+            </div>
+            <div class="single-information">
+                <span class="info-icon"><i class="zmdi zmdi-pin"></i></span>
+                <span class="info-text">Rua lira Cearense, 190 <br>SP, Brasil</span>
+            </div>
+            <div class="contact-links">
+                <h3>Nossas redes sociais</h3>
+                <div class="social-links">
+                    <a href="" class="zmdi zmdi-facebook"></a>
+                    <a href="" class="zmdi zmdi-google-plus"></a>
+                    <a href="" class="zmdi zmdi-twitter"></a>
+                    <a href="" class="zmdi zmdi-pinterest"></a>
+                    <a href="" class="zmdi zmdi-linkedin"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="footer-area">
+    <section class="contact-form-area pt-100 pb-90 blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="section-title text-center">
+                        <h1>Contato</h1>
+                        <span><img src="" alt=""></span>
+                        <p>Entre em contato conosco, será um prazer lhe atender</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <form id="contact-form" action="@">
+                        <input type="text" name="nome" placeholder="nome">
+                        <input type="email" name="email" placeholder="e-email">
+                        <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <button type="submit" class="default-btn"><span>Enviar</span></button>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="footer-area">
         <div class="footer-widget-area bg-3 overlay-2 pt-100 pb-85 fix">
             <div class="container">
                 <div class="row">
@@ -236,6 +203,7 @@
             </div>
         </div>
     </section>
+
 
 </body>
 </html>
