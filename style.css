@@ -170,5 +170,132 @@
     -webkit-transition-delay: 0.5s;
             transition-delay: 0.5s;
 
-            
+
+}
+/* booking area */
+
+.booking-form input {
+    margin-bottom: 20px;
+} 
+.booking-form input:focus {
+    color: #614a3d;
+    border-color: #614a3d;
+}
+.booking-form input:focus:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #614a3d;
+}
+.booking-form input:focus:-moz-placeholder {
+    opacity: 1;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #614a3d;
+}
+.booking-form input:focus::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #614a3d;
+}
+.booking-form .default-btn {
+    margin-top: 20px;
+    padding: 0 98px;
+}
+.active.day {
+    background:#614a3d none repeat scroll 0 0;
+    color: white;
+}
+.day {
+    cursor: pointer;
+    text-align: center;
+}
+.datepicker thead tr:nth-child(2){
+    background: #614a3d none repeat scroll 0 0;
+    color: white;
+    text-align: center;
+}
+.datepicker-switch {
+    text-align: center;
+}
+.datepicker{
+    padding: 0;
+}
+.date-wrapper .datepicker{
+    padding: 0 17px;
+}
+.datepicker .prev, .datepicker .next {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0.8px;
+}
+
+/* client Area */
+.single-testimonial > p {
+    color: #dbdada;
+    margin-bottom: 18px;
+    padding: 0 20px;
+}
+.client-ratting i {
+    color:white;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.single-client {
+    background: white none repeat scroll 0 0;
+    display: table;
+    height: 112px;
+    text-align: center;
+    width: 100%;
+}
+.single-client-container
+.col-md-4:nth-child(1),
+.single-client-container
+.col-md-4:nth-child(2),
+.single-client-container
+.col-md-4:nth-child(3){
+    margin-bottom: 32px;
+}
+.client-table-cell {
+    display:table-cell;
+    vertical-align: middle;
+}
+single-client:hover {
+    opacity: 0.8;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.owl-dots {
+    margin-top: 62px;
+    text-align: center;
+}
+.owl-dot {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 14px;
+    margin: 0 6px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;
+    width: 14px;
+    position: relative;
+}
+.owl-dot::after {
+    background: white none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: -5px;
+    opacity: 0;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: -5px;
+    -webkit-transition: all 0.1s ease-out 0s;
+            transition: all 0.1s ease-out 0s;
+    width: 20px;
+}
+.owl-dot.active:after {
+    opacity: 1;
+    -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.testimonial-carousel{
+    padding-top: 15px;
 }
